@@ -41,3 +41,13 @@ html{
     display: flex;
     justify-content: center;
 }
+
+
+
+/* for resposiveness*/
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
