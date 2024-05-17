@@ -1,0 +1,43 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+}
+
+.title{
+    margin-right: 50%;
+    
+}
+
+.options{
+    display: flex;
+}
+
+.navbarp{
+    margin: 40px;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.displayshow{
+    display: flex;
+    justify-content: center;
+}
