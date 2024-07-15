@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    
+
+<div id="demo">
+    <h1>This is heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, quod!</p>
+</div>
+    <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, quod!</p>
+
+<br><br>
+
+    <h3>addEventListner() in javascript</h3>
+    <button id="mybtn">click here</button>
+
+</body>
+
+<script>
+    //document.getElementById("demo").innerHTML = "<h2> this is good </h2>";      // innerHTML is used for selecting html elements
+
+    //document.getElementsByTagName("p").innerHTML = "<h2> this is good </h2>";
+    //or
+    // let paragraph = document.getElementsByTagName("p");
+    // for(let i = 0; i<paragraph.length; i++){
+    //     paragraph[i].innerHTML = "Paragraph updated";
+    // }
+
+// let paragraph = document.querySelectorAll(".paragraph");     //query selector is used for css selection
+// for(let i=0; i< paragraph.length; i++){
+//     paragraph[i].innerHTML = "This is changed html";
+// }
+
+// let paragraph = document.querySelectorAll(".paragraph");
+// for(let i=0; i< paragraph.length; i++){
+//     paragraph[i].style.color = "blue";              // style used (for adding css) instead of innerHTML
+// }
+
+
+document.getElementById("mybtn").addEventListener("click", function(){
+    alert("The button has been clicked");
+});
+
+    
+</script>
+</html>

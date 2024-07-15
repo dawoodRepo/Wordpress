@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+</head>
+
+
+
+<!-- 1. change style of a text using javascript -->
+
+<!-- <body>
+    
+<div id="mydiv">This is the text that is going to be change</div>
+<button onclick="changeStyle()">Change style</button>
+
+</body>
+
+<script>
+
+function changeStyle(){
+let myDiv = document.getElementById("mydiv");
+myDiv.style.color = "green";
+myDiv.style.fontSize = "30px";
+mydiv.style.backgroundColor = "lightblue";
+}
+
+</script> -->
+
+<!-- ------------------------------------------------------- -->
+
+<!-- 2. Adding and removing(toggle) classes or style
+
+<style>
+    .highlight {
+        background-color: lightblue;
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <div id="mydiv">This is the text that is going to be change</div>
+    <button onclick="changeStyle()">Toggle style</button>
+
+    <script>
+
+        function changeStyle() {
+            let myDiv = document.getElementById("mydiv");
+            myDiv.classList.toggle("highlight");
+        }
+
+    </script>
+</body> -->
+
+<!-- -------------------------------------------------------- -->
+
+<!-- 3. Adding and removing(toggle) classes or style
+
+<body>
+
+    <div id="para">This is the first paragraph</div>
+    <button onclick="addParagraph()">Add paragraph</button>
+
+    <script>
+
+        function addParagraph() {
+            let para = document.getElementById("para");
+            let newPara = document.createElement("p");
+            newPara.textContent = "New paragraph added!";
+            para.appendChild(newPara);
+        }
+
+    </script>
+</body> -->
+
+<!-- --------------------------------------------------------
+
+4. Appennding items to list
+
+<body>
+
+    <ul id="list">
+        <li>Orange</li>
+        <li>Apple</li>
+    </ul>
+    <button onclick="addItem()">Add item</button>
+
+    <script>
+
+        function addItem() {
+            let list = document.getElementById("list");
+            let newItem = document.createElement("li");
+            newItem.textContent = "Mango";
+            list.appendChild(newItem);
+        }
+
+    </script>
+</body> -->
+
+
+<!-- --------------------------------------------------------
+
+5. Appennding(inserting) new items to list
+
+<body>
+
+    <ul id="list">
+        <li id="item1">item 1</li>
+        <li>item 2</li>
+    </ul>
+    <button onclick="insetItem()">Add item</button>
+
+    <script>
+
+        function insertItem() {
+            let list = document.getElementById("list");
+            let newItem = document.createElement("li");
+            let item1 = document.getElementById("item1");
+
+            newItem.textContent = "new item added";
+            list.insertBefore(newItem, item1);
+        }
+
+    </script>
+</body> -->
+
+<!-- --------------------------------------------------------
+
+5. removing items from list
+
+<body>
+
+    <ul id="list">
+        <li id="item1">item 1</li>
+        <li id="item2">item 2</li>
+    </ul>
+    <button onclick="removeItem()">Add item</button>
+
+    <script>
+
+        function removeItem() {
+            let list = document.getElementById("list");
+            let item1 = document.getElementById("item1");
+            list.removeChild(item1);
+
+        }
+
+    </script>
+</body> -->
+
+<!-- --------------------------------------------------------
+
+7. removing elements(divs) using remove() -->
+
+<!-- <body>
+
+    <div class="myDiv">This will be removed</div>
+    <button onclick="removeDiv()">Add item</button>
+
+    <script>
+
+        function removeDiv() {
+            let myDiv = document.getElementById("myDiv");
+            myDiv.remove();
+        }
+
+    </script>
+</body> -->
+
+<!-- --------------------------------------------------------
+
+8. event handling -->
+
+<body>
+
+    <button id="mybtn">Add paragraph</button>
+    <div id="message"></div>
+
+    <script>
+
+        let mybtn = document.getElementById("mybtn");
+        mybtn.addEventListener("click", () => {
+            let message = document.getElementById("message");
+            message.textContent = "Button was clicked and paragraph is added";
+        });
+
+    </script>
+</body>
+
+</html>
